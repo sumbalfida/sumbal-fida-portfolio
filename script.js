@@ -1,5 +1,5 @@
-// Smooth scrolling & active link
-const links = document.querySelectorAll('nav ul li a');
+// Smooth scroll & active link highlight
+const links = document.querySelectorAll('#sidebar nav ul li a');
 links.forEach(link => {
     link.addEventListener('click', e => {
         e.preventDefault();
@@ -7,12 +7,11 @@ links.forEach(link => {
     });
 });
 
-// Active link highlight on scroll
 window.addEventListener('scroll', () => {
-    let fromTop = window.scrollY + 80;
+    let fromTop = window.scrollY + 100;
     links.forEach(link => {
         const section = document.querySelector(link.getAttribute('href'));
-        if(section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+        if(section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop){
             link.classList.add('active');
         } else {
             link.classList.remove('active');

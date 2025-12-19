@@ -3,127 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumbal Fida - Data Analyst Portfolio</title>
+    <title>Sumbal Fida - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header / Navbar -->
-    <header>
-        <div class="container header-container">
-            <h1 class="logo">Sumbal Fida</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Sidebar Navigation -->
+    <aside id="sidebar">
+        <div class="logo">Sumbal Fida</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
         </div>
-    </header>
+    </aside>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <img src="images/profile.jpg" alt="Sumbal Fida" class="hero-img">
-            <h2>Hello, I'm Sumbal Fida</h2>
-            <p>Data Analyst | Mathematician | Machine Learning Enthusiast</p>
-            <a href="#contact" class="button">Contact Me</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am Sumbal Fida, passionate about analyzing data, solving mathematical problems, and applying machine learning to real-world challenges. I enjoy turning raw data into actionable insights.</p>
-        </div>
-    </section>
-
-    <!-- Skills / Profession Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills & Profession</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Data Analysis</h3>
-                    <p>Excel, SQL, Python, Pandas, Tableau</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Mathematics</h3>
-                    <p>Statistics, Probability, Linear Algebra, Calculus</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Machine Learning</h3>
-                    <p>Supervised & Unsupervised Learning, Scikit-Learn, Regression Models</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Programming</h3>
-                    <p>Python, R, SQL, HTML, CSS, JavaScript</p>
-                </div>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content glass">
+                <img src="images/profile.jpg" alt="Sumbal Fida" class="profile-img">
+                <h1>Hello, I'm Sumbal Fida</h1>
+                <p>Data Analyst | Mathematician | Machine Learning Enthusiast</p>
+                <a href="#contact" class="button">Contact Me</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="images/project1.jpg" alt="Project 1">
-                    <div class="overlay">
-                        <h3>Data Analysis Project</h3>
-                        <p>Analyzed sales data & predicted trends</p>
+        <!-- About Section -->
+        <section id="about">
+            <div class="container glass">
+                <h2>About Me</h2>
+                <p>I am passionate about analyzing data, solving mathematical problems, and applying machine learning to real-world challenges. I turn raw data into actionable insights.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2>Skills & Profession</h2>
+                <div class="skills-grid">
+                    <div class="skill-card glass">
+                        <h3>Data Analysis</h3>
+                        <p>Excel, SQL, Python, Pandas, Tableau</p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/project2.jpg" alt="Project 2">
-                    <div class="overlay">
-                        <h3>Machine Learning Model</h3>
-                        <p>Built predictive model using Python</p>
+                    <div class="skill-card glass">
+                        <h3>Mathematics</h3>
+                        <p>Statistics, Probability, Linear Algebra, Calculus</p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/project3.jpg" alt="Project 3">
-                    <div class="overlay">
-                        <h3>Math Modeling</h3>
-                        <p>Applied linear algebra & statistics</p>
+                    <div class="skill-card glass">
+                        <h3>Machine Learning</h3>
+                        <p>Supervised & Unsupervised Learning, Scikit-Learn, Regression Models</p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="images/project4.jpg" alt="Project 4">
-                    <div class="overlay">
-                        <h3>Visualization Dashboard</h3>
-                        <p>Created interactive Tableau dashboard</p>
+                    <div class="skill-card glass">
+                        <h3>Programming</h3>
+                        <p>Python, R, SQL, HTML, CSS, JavaScript</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit" class="button">Send Message</button>
-            </form>
-            <div class="links">
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="https://github.com" target="_blank">GitHub</a>
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item glass">
+                        <img src="images/project1.jpg" alt="Project 1">
+                        <div class="overlay">
+                            <h3>Data Analysis Project</h3>
+                            <p>Analyzed sales data & predicted trends</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item glass">
+                        <img src="images/project2.jpg" alt="Project 2">
+                        <div class="overlay">
+                            <h3>Machine Learning Model</h3>
+                            <p>Built predictive model using Python</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item glass">
+                        <img src="images/project3.jpg" alt="Project 3">
+                        <div class="overlay">
+                            <h3>Math Modeling</h3>
+                            <p>Applied linear algebra & statistics</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item glass">
+                        <img src="images/project4.jpg" alt="Project 4">
+                        <div class="overlay">
+                            <h3>Visualization Dashboard</h3>
+                            <p>Created interactive Tableau dashboard</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Sumbal Fida. All Rights Reserved.</p>
-    </footer>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container glass">
+                <h2>Contact Me</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Sumbal Fida. All Rights Reserved.</p>
+        </footer>
+    </main>
 
     <script src="js/script.js"></script>
 </body>

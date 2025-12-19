@@ -1,20 +1,20 @@
-// Smooth scroll & active link highlight
-const links = document.querySelectorAll('#sidebar nav ul li a');
-links.forEach(link=>{
-    link.addEventListener('click', e=>{
+// script.js
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-    });
-});
-
-window.addEventListener('scroll',()=>{
-    let fromTop = window.scrollY + 100;
-    links.forEach(link=>{
-        const section=document.querySelector(link.getAttribute('href'));
-        if(section.offsetTop<=fromTop && section.offsetTop+section.offsetHeight>fromTop){
-            link.classList.add('active');
-        }else{
-            link.classList.remove('active');
+        const targetId = this.getAttribute('href');
+        if(targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if(targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
         }
     });
 });
+
+// TODO: Add code for a testimonial for slider
+// TODO: Add code to toggle FAQ answers

@@ -3,51 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Data & Strategy</title>
+    <title>Sumbal Fida | Business Analytics & Data Strategy</title>
+    <!-- Link to CSS File -->
     <link rel="stylesheet" href="style.css">
-    <!-- Link to Font Awesome for icons (like stars, checkmarks) -->
+    <!-- External Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Link to Google Fonts for modern fonts like Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">YourLogo</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">SF Analytics</div>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Hero Section (like zjlogix.com top part) -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Optimize Beyond Limits</h1>
-            <p>Empowering organizations through data-driven strategy, advanced simulations, and measurable results.</p>
-            <a href="#contact" class="btn-primary">Get Started</a>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="about-section">
-        <h2 class="section-title">ABOUT US</h2>
-        <p class="section-subtitle">Helping businesses turn complex challenges into growth opportunities.</p>
-        <div class="about-content">
-            <p>We turn Operational Complexity into Clarity and Growth. At [Your Name], we help businesses turn complex challenges into growth opportunities by combining innovative strategy...</p>
-            <!-- You can add points with icons here -->
-            <div class="about-point">
-                <i class="fas fa-check-circle"></i>
-                <span>Proven track record of delivering measurable ROI</span>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Data-Driven Decisions, Mathematical Precision</h1>
+                <p>Transforming complex business challenges into growth opportunities through advanced analytics, mathematical modeling, and strategic insights.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-chart-line"></i> Start Your Project
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i> View Services
+                    </a>
+                </div>
             </div>
-            <!-- Add more points -->
         </div>
     </section>
 
-    <!-- TODO: Add Services, Testimonials, Stats, FAQ, Contact Sections Here -->
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ABOUT ME</h2>
+                <p class="section-subtitle">Business Analytics Specialist | Mathematician | Data Strategy Consultant</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I combine mathematical rigor with business acumen to deliver actionable insights that drive growth and efficiency. With expertise in statistical analysis, predictive modeling, and data visualization, I help organizations make informed decisions backed by quantitative evidence.</p>
+                    <p>My approach bridges the gap between complex mathematical concepts and practical business applications, ensuring that every analysis translates into tangible results and strategic advantage.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <h4>Business Analytics</h4>
+                        <p>Turning data into strategic business insights</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>Mathematical Modeling</h4>
+                        <p>Advanced statistical and predictive models</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>Data Visualization</h4>
+                        <p>Clear, actionable dashboards and reports</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>Strategy Consulting</h4>
+                        <p>Data-driven business strategy development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Services Section -->
+    <section id="services" style="background: var(--secondary-dark);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">SERVICES</h2>
+                <p class="section-subtitle">Comprehensive analytics solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Business Analytics</h3>
+                    <p>Comprehensive analysis of business performance, market trends, and operational efficiency using advanced statistical methods and visualization tools.</p>
+                </div>
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Mathematical Modeling</h3>
+                    <p>Development of predictive models, optimization algorithms, and statistical frameworks to solve complex business problems and forecast outcomes.</p>
+                </div>
+                <div class="service-card card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Strategy</h3>
+                    <p>End-to-end data solutions including collection, processing, analysis, and visualization strategies to support data-driven decision making.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">TECHNICAL SKILLS</h2>
+                <p class="section-subtitle">Expertise across analytics, mathematics, and data science domains</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category card">
+                    <h3>Analytics & Visualization</h3>
+                    <ul class="skill-list">
+                        <li>Python (Pandas, NumPy)</li>
+                        <li>R Programming</li>
+                        <li>Tableau & Power BI</li>
+                        <li>SQL & Database Management</li>
+                        <li>Excel Advanced Analytics</li>
+                    </ul>
+                </div>
+                <div class="skill-category card">
+                    <h3>Mathematics & Statistics</h3>
+                    <ul class="skill-list">
+                        <li>Statistical Analysis</li>
+                        <li>Predictive Modeling</li>
+                        <li>Linear Algebra</li>
+                        <li>Calculus & Optimization</li>
+                        <li>Probability Theory</li>
+                    </ul>
+                </div>
+                <div class="skill-category card">
+                    <h3>Machine Learning & AI</h3>
+                    <ul class="skill-list">
+                        <li>Scikit-learn</li>
+                        <li>Regression Models</li>
+                        <li>Classification Algorithms</li>
+                        <li>Natural Language Processing</li>
+                        <li>Neural Networks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section style="background: var(--secondary-dark);">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="95">0</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-label">Data Models Built</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">Analyses Delivered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">CONTACT</h2>
+                <p class="section-subtitle">Let's discuss how data analytics can transform your business</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>sumbal.fida@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Available for remote projects worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form card">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Sumbal Fida</div>
+                <p style="color: var(--text-gray); max-width: 600px; margin-bottom: 30px;">
+                    Business Analytics & Data Strategy Consultant specializing in mathematical modeling, predictive analytics, and data-driven decision making.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 Sumbal Fida. All rights reserved.</p>
+                    <p>Business Analytics Portfolio</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript File -->
     <script src="script.js"></script>
 </body>
-</html>
+    </html>
